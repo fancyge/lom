@@ -173,7 +173,7 @@ strainphlan -s consensus_markers/*.pkl\
 ## 4. Gene compositional analysis of Streptococcus mitis
 
 #### Tools
-PanPhlAn
+PanPhlAn3
 
 #### Inputs
 paired end clean reads
@@ -206,7 +206,7 @@ panphlan_profiling.py -i ./panphlan/map_results --o_matrix ./panphlan/result_pro
 To assemble contigs from microbial communities using paired end reads for each sample
 
 #### Tools
-MEGAHIT
+MEGAHIT v1.2.9
 
 #### Inputs
 Interleaved target reads
@@ -236,7 +236,7 @@ runMetaBat.sh ./Assembly_Megahit/${sample}/${sample}.contigs.fa ./Align_to_assem
 To check the quality of all MAGs and select qualified MAGs based on criteria
 
 #### Tools 
-Checkm
+Checkm v1.1.3
 
 #### Inputs
 output folder from MetaBAT2
@@ -251,7 +251,7 @@ checkm qa --tab_table ./Checkm/Checkm_results/${sample}/lineage.ms ./Checkm/Chec
 ## 4. Dereplication of qualified MAGs
 
 #### Tools
-dRep/3.2.2
+dRep v3.2.2
 
 #### Inputs
 all qualified MAGs
@@ -268,7 +268,7 @@ dRep dereplicate ./output_drep_15393MAGs_comp75/ -g ./dereplicate_MAGs/15393_MAG
 species-level genome bins (SGBs)
 
 #### Tools
-MASH
+MASH v2.3
 
 #### Commands:
 
@@ -307,7 +307,7 @@ esearch -db assembly -query '{accessionID}' | esummary | xtract -pattern Documen
 species-level genome bins (SGBs)
 
 #### Tools
-phylophlan
+PhyloPhlAn v3
 
 #### Commands:
 ```
@@ -329,7 +329,7 @@ map the MAGs to coverage files; fit a linear regression to the log-transformed c
 selected MAGs of particular species
 
 #### Tools
-iRep
+iRep v1.1.14
 
 #### Commands:
 ```
@@ -342,7 +342,7 @@ iRep -f ./irep/input/${mag}.fa -s ./irep/input/${sample}.sam -o ./irep/output/${
 SGBs
 
 #### Tools
-phylophlan
+PhyloPhlAn v3
 
 #### Commands
 ```
