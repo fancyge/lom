@@ -1,5 +1,5 @@
 # Longitudinal twins oral microbiome
-**This file serves to display the general commands used to process childhood oral microbiome from in a longitudinal twincohort; statistical analysis can be found in the scripts folder**
+**This file serves to display the general commands used to process childhood oral microbiome in a longitudinal twin cohort; statistical codes are in the scripts folder**
 
 
 # Pre-processing of the sequencing reads
