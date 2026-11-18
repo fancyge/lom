@@ -22,7 +22,7 @@ acc_records  <- numeric(n_repeats)
 
 for (i in seq_len(n_repeats)) {
   
-  data_split <- initial_split(data, prop = split_prop, strata = Timepoint)
+  data_split <- group_initial_split(data, group = Family_ID, prop = split_prop)
   train <- training(data_split)
   test  <- testing(data_split)
   
